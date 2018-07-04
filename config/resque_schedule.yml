@@ -1,0 +1,5 @@
+refresh_catalog_items:
+  every: "1d"
+  queue: background
+  class: Background::CatalogBackfill
+  description: "refresh data for catalog items"

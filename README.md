@@ -14,7 +14,7 @@ This project use the following external gems/lib/tech:
 * The end user / service / bot can access & consume the API service using a direct http get call via browser or via console
 * An Authentication mechanism was added in order to filter out un authorized users/bots (massive API calls from bots can caused "DOS" if not using CDN)
 * A pagination mechanism was added and can be easily control via GET params (see below how to)
-* each result that return to the client is cached in the browser/CDN for 15 minutes (can be any time suggested). this is done using Surrogate-Control key in the request's header.
+* Each result that return to the client is cached in the browser/CDN for 15 minutes (can be any time suggested). this is done using Surrogate-Control key in the request's header.
 
 # API Reference
 In order to consume the API service, type the following in the browser:
@@ -33,3 +33,4 @@ for example: localhost:3000/api/v1/catalog/nestle
 # Tests
 This project uses the following external gem/tech
 * zeus (https://github.com/burke/zeus)
+* Seeds (used to prepopulate Test DB tables)
